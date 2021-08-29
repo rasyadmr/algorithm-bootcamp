@@ -235,7 +235,7 @@ void purchasing(Produk barang) {
 		delay();
 		return;
 	}
-	while (accepted) {
+	if (accepted) {
 		addtotal(barang.harga, kuantitas);
 		printf("Anda membeli %s dengan harga Rp %d sebanyak %d\n",barang.nama, barang.harga, kuantitas);
 		printf("Total belanja sekarang: Rp %d", total);
